@@ -1335,6 +1335,15 @@
             text-align: center;
         }
     }
+    .footer__nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
     .footer__nav-link {
         margin-left: 5%;
         transition: color 0.2s ease;
