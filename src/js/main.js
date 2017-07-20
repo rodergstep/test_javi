@@ -1,3 +1,14 @@
+// First screen animation
+
+var tl = new TimelineMax();
+tl
+    .fromTo('.header__logo-box', 1, { y: -200, opacity: 0 }, { y: 0, opacity: 1 })
+    .fromTo('.header__bottom-info', 1, { y: -200, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.7")
+    .fromTo('.header__top-info', 1, { y: -200, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.7")
+    .staggerFromTo('.nav a', 0.5, { opacity: 0, y: 30 }, { opacity: 1, y: 0 }, 0.03)
+    .fromTo('.hero-slider', 0.5, { opacity: 0 }, { opacity: 1 })
+
+
 // custom select on page LEADS
 $('.select').on('click', '.placeholder', function() {
     var parent = $(this).closest('.select');
